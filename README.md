@@ -2,7 +2,7 @@
 
 This is a simple React component for a Crypto ATM application. It allows users to connect their MetaMask wallet, view their account balance, deposit and withdraw ETH, check the owner's name and a simple calculator with limited operations.
 
-##Prerequisites
+## Prerequisites
 The smart contract uses Solidity version ^0.8.16.
 
 ## Requirements
@@ -13,15 +13,12 @@ The smart contract uses Solidity version ^0.8.16.
 
 The Crypto ATM component provides the following features:
 
-- Connect to MetaMask wallet
-- Display user's account address
-- View user's account balance
-- Deposit ETH into the ATM
-- Withdraw ETH from the ATM
-- Check other's balance from wallet address
+Deposit: Users can deposit funds into their account.
+Withdraw: Users can withdraw funds from their account.
+Balance Check: Users can check the balance of their account.
+Transaction History: Users can view the transaction history of the smart contract.
+Account Name: Users can set and retrieve an account name associated with their address.
 
-
-Please note that the component assumes you have set up and configured MetaMask in your browser.
 
 ## Customization
 
@@ -40,15 +37,7 @@ After cloning the github, you will want to do the following to get the code runn
 After this, the project will be running on your localhost. 
 Typically at http://localhost:3000/
 
-##Events
-The smart contract emits the following events:
-
-Deposit(uint256 amount): Triggered when a deposit is made, providing the amount deposited.
-Withdraw(uint256 amount): Triggered when a withdrawal is made, providing the amount withdrawn.
-Transaction(address sender, address receiver, uint256 amount): Triggered during a transaction, providing the sender's and receiver's addresses and the amount transferred.
-NameUpdate(string value): Triggered when the account name is updated, providing the new account name.
-
-##Functions
+## Functions
 The smart contract provides the following functions:
 
 getBalanceFromWalletAddress(address walletAddress): Retrieves the balance of the specified wallet address.
