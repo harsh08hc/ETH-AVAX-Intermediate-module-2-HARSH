@@ -2,7 +2,7 @@
 
 This is a simple React component for a Crypto ATM application. It allows users to connect their MetaMask wallet, view their account balance, deposit and withdraw ETH, check the owner's name and a simple calculator with limited operations.
 
-Prerequisites
+##Prerequisites
 The smart contract uses Solidity version ^0.8.16.
 
 ## Requirements
@@ -40,7 +40,15 @@ After cloning the github, you will want to do the following to get the code runn
 After this, the project will be running on your localhost. 
 Typically at http://localhost:3000/
 
-Functions
+##Events
+The smart contract emits the following events:
+
+Deposit(uint256 amount): Triggered when a deposit is made, providing the amount deposited.
+Withdraw(uint256 amount): Triggered when a withdrawal is made, providing the amount withdrawn.
+Transaction(address sender, address receiver, uint256 amount): Triggered during a transaction, providing the sender's and receiver's addresses and the amount transferred.
+NameUpdate(string value): Triggered when the account name is updated, providing the new account name.
+
+##Functions
 The smart contract provides the following functions:
 
 getBalanceFromWalletAddress(address walletAddress): Retrieves the balance of the specified wallet address.
@@ -50,3 +58,19 @@ checkBalance(): Returns the balance of the sender's account.
 getTransactionStatement(): Returns the address of the smart contract (unused parameter).
 setAccountName(string memory _name): Sets the account name for the sender's address.
 getAccountName(): Returns the account name associated with the sender's address.
+
+
+## Technologies Used
+
+- React - JavaScript library for building user interfaces
+- Ethereum - Blockchain network for decentralized applications
+- MetaMask - Wallet and gateway to Ethereum blockchain
+- ethers.js - Library for interacting with Ethereum smart contracts
+
+## Contributing
+
+Contributions are welcome! If you find any issues or want to add new features, feel free to submit a pull request.
+
+## Authors
+
+Harsh Chaudhary
