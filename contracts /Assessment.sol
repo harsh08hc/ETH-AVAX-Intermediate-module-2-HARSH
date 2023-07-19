@@ -62,8 +62,9 @@ function checkBalance() public view returns(uint256) {
 }
 
 // see transaction history
-function getTransactionStatement(address walletAddress) public view returns(address, address, uint256) {
-    return (walletAddress, walletAddress, 0);
+function getTransactionStatement() public view returns(address) {
+    // walletAddress is unused
+    return address(this);
 }
 
 // change account name
