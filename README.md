@@ -3,7 +3,10 @@
 This is a simple React component for a Crypto ATM application. It allows users to connect their MetaMask wallet, view their account balance, deposit and withdraw ETH, check the owner's name and a simple calculator with limited operations.
 
 ## Prerequisites
-The smart contract uses Solidity version ^0.8.16.
+
+- Node.js (v14.0.0 or higher)
+- MetaMask wallet extension installed in your browser
+
 
 ## Requirements
 
