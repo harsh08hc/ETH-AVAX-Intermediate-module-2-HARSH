@@ -66,3 +66,7 @@ Contributions are welcome! If you find any issues or want to add new features, f
 ## Authors
 
 Harsh Chaudhary
+
+## Video Walkthrough
+
+https://www.loom.com/share/3e4b2dd051f84a76b68e15bd077e3bd5?sid=2d79ae27-d696-4835-bcee-365bb3256197
